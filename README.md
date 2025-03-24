@@ -188,7 +188,7 @@ class Program
 
 
 <div align="center">
-  <sub>Создано с ❤️ | Обновлено: 2025</sub>
+  <sub>Создано с ❤️ | Обновлено: Сегодня :)</sub>
 </div>
 ```
 
