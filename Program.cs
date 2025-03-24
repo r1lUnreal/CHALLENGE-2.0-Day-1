@@ -196,3 +196,5 @@ class Program
         Console.ResetColor();
     }
 }
+
+//! Первое задание от ВЫЗОВ 2.0

@@ -280,7 +280,7 @@ class Program
 
 
 <div align="center" width="400px">
-  <sub>Создано с ❤️ | <em>SIGNET BY RILUNREAL</em> </sub>
+  <sub>❤️<em>SIGNET BY RILUNREAL</em>❤️</sub>
 </div>
 ```
 
@@ -290,3 +290,4 @@ class Program
 3. Полный код с подсветкой синтаксиса
 4. Примеры работы программы
 5. Четкую структуру с разделами
+6. Кучу заморочек от разработчика
