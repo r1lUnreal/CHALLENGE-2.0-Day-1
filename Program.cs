@@ -58,13 +58,21 @@ class Program
                 string input = Console.ReadLine()!;
                 
                 if (!int.TryParse(input, out age))
+                {
                     Console.WriteLine("Ошибка: Возраст должен быть числом!");
+                }
                 else if (age <= 0)
+                {
                     Console.WriteLine("Ошибка: Возраст должен быть положительным числом!");
+                }
                 else if (age > 120)
+                {
                     Console.WriteLine("Ошибка: Введите реалистичный возраст!");
+                }
                 else
+                {
                     break;
+                }
             }
             return age;
         }
@@ -97,12 +105,18 @@ class Program
         NameValidator validator = name =>
         {
             if (string.IsNullOrWhiteSpace(name))
+            {
                 return "Ошибка: Имя не может быть пустым!";
+            }
             if (name.Length < 2)
+            {
                 return "Ошибка: Имя слишком короткое!";
+            }
             foreach (char c in name)
+            {
                 if (!char.IsLetter(c) && c != ' ' && c != '-')
-                    return "Ошибка: Имя должно содержать только буквы, пробелы или дефисы!";
+                    return "Ошибка: Имя должно содержать только английскую раскладку!";
+            }
             return null!;
         };
 
