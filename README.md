@@ -280,7 +280,7 @@ class Program
 
 
 <div align="center">
-  <sub>Создано с ❤️ | ***SIGNET BY RILUNREAL***</sub>
+  <sub>Создано с ❤️ | **SIGNET BY RILUNREAL** </sub>
 </div>
 ```
 
