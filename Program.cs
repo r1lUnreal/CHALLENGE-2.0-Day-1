@@ -4,10 +4,10 @@ using System.Text;
 
 class Program
 {
-    // Делегат для обработки имени
+    //? Делегат для обработки имени
     delegate string NameValidator(string name);
 
-    // Класс для хранения данных пользователя
+    //? Класс для хранения данных пользователя (ООП)
     class User
     {
         public string Name { get; }
@@ -21,7 +21,7 @@ class Program
         }
     }
 
-    // Класс для аргументов события
+    //? Класс для аргументов события
     class UserCreatedEventArgs : EventArgs
     {
         public User User { get; }
@@ -32,13 +32,13 @@ class Program
         }
     }
 
-    // Класс для управления пользователями
+    //? Класс для управления пользователями
     class UserManager
     {
-        // Событие создания пользователя
+        //? Событие создания пользователя
         public event EventHandler<UserCreatedEventArgs> OnUserCreated = null!;
 
-        // Метод для создания пользователя
+        //? Метод для создания пользователя
         public void CreateUser(NameValidator validator)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -51,7 +51,7 @@ class Program
             Console.ResetColor();
             string name = Console.ReadLine()!;
 
-            // Проверка имени с помощью делегата
+            //? Проверка имени с помощью делегата
             string validationResult = validator(name);
             if (validationResult != null)
             {
@@ -121,10 +121,9 @@ class Program
     {
         var manager = new UserManager();
 
-        // Подписываемся на событие
         manager.OnUserCreated += HandleUserCreated!;
 
-        // Создаем делегат для валидации имени
+        //? Делегат для валидации имени
         NameValidator validator = name =>
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -148,7 +147,7 @@ class Program
             return null!;
         };
 
-        // Создаем пользователя
+        //? Создание пользователя
         manager.CreateUser(validator);
 
         Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -157,7 +156,7 @@ class Program
         Console.ReadKey();
     }
 
-    // Обработчик события создания пользователя
+    //? Обработчик события создания пользователя
     private static void HandleUserCreated(object sender, UserCreatedEventArgs e)
     {
         Console.ForegroundColor = ConsoleColor.Green;

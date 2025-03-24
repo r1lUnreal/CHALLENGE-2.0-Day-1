@@ -24,10 +24,6 @@
 1. **Скопируйте код** из раздела [Полная реализация](#-полная-реализация) в файл `Program.cs`
 
 2. **Создайте новый проект**:
-```bash
-dotnet new console -n UserRegistration
-cd UserRegistration
-```
 
 3. **Замените содержимое Program.cs** на мой код
 
@@ -283,8 +279,8 @@ class Program
 </details>
 
 
-<div align="center">
-  <sub>Создано с ❤️ | Обновлено: Сегодня :)</sub>
+<div align="center" width="400px">
+  <sub>Создано с ❤️ | <em>SIGNET BY RILUNREAL</em> </sub>
 </div>
 ```
 
