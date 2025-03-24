@@ -36,7 +36,7 @@ class Program
     class UserManager
     {
         // Событие создания пользователя
-        public event EventHandler<UserCreatedEventArgs> OnUserCreated;
+        public event EventHandler<UserCreatedEventArgs> OnUserCreated = null!;
 
         // Метод для создания пользователя
         public void CreateUser(NameValidator validator)
